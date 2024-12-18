@@ -1,22 +1,17 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Rénald',
+    lastName:  'DESIRE',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Etudiant en informatique',
+    avatar:    '/images/avatar.JPEG',
+    location:  'America/Martinique',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['French', 'English']  // optional: Leave the array empty if you don't want to display languages
 }
 
-const newsletter = {
-    display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
-}
 
 const social = [
     // Links are automatically displayed.
@@ -24,7 +19,7 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/donotdisturb7',
     },
     {
         name: 'LinkedIn',
@@ -47,14 +42,14 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Rénald</>,
+    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>, où je suis le parcours réalisation d'applications web. Après les cours, je construis des projets personnels.</>
 }
 
 const about = {
-    label: 'About',
-    title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    label: 'Moi',
+    title: 'À propos de moi',
+    description: `Rencontre ${person.name}, ${person.role} de ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: false
@@ -62,79 +57,77 @@ const about = {
     avatar: {
         display: true
     },
-    calendar: {
-        display: true,
-        link: 'https://cal.com'
-    },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Étudiant passionné d’informatique depuis toujours, je trouve une véritable joie à explorer le monde du code et des technologies. Mon amour pour l’informatique m’inspire à apprendre constamment et à contribuer au domaine.</>
     },
     work: {
         display: true, // set to false to hide this section
-        title: 'Work Experience',
+        title: 'Expériences Professionnelles',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'IUT de la Martinique : L3MA',
+                timeframe: 'Juin 2024 ',
+                role: 'Développeur',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Développement d'une interface interactive utilisant des bibliothèques Python pour la visualisation des données côtières de la Martinique.</>,
+                    <>Création d'un système de modélisation pour analyser l'érosion des plages et l'évolution des zones côtières via la télédétection.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '',
+                        alt: '',
                         width: 16,
                         height: 9
                     }
                 ]
             },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
+            // {
+            //     company: 'Creativ3',
+            //     timeframe: '2018 - 2022',
+            //     role: 'Lead Designer',
+            //     achievements: [
+            //         <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+            //         <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+            //     ],
+            //     images: [ ]
+            // }
         ]
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'IUT de la Martinique : 2023 -> 2026',
+                description: <>Bachelor universitaire de technologie Informatique.</>,
             },
+,
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
-            }
+                name: 'Lycée de Bellevue : 2020 -> 2023',
+                description: <>Baccalauréat en Sciences Économiques et Sociales et Numérique Science Informatique.</>,
+            },
+
         ]
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Technical skills',
+        title: 'Compétences',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Compétence',
+                description: <>.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -142,12 +135,12 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Compétence',
+                description: <>.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -159,98 +152,98 @@ const about = {
 }
 
 const blog = {
-    label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
+    label: 'Competences',
+    title: 'Compétences',
+    description: ``
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
 
 const work = {
-    label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
+    label: 'Mes projets',
+    title: 'Mes projets',
+    description: `Design et développement de projets par ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 }
 
-const gallery = {
-    label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
-    images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-    ]
-}
+// const gallery = {
+//     label: 'Gallery',
+//     title: 'My photo gallery',
+//     description: `A photo collection by ${person.name}`,
+//     // Images from https://pexels.com
+//     images: [
+//         { 
+//             src: '/images/gallery/img-01.jpg', 
+//             alt: 'image',
+//             orientation: 'vertical'
+//         },
+//         { 
+//             src: '/images/gallery/img-02.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-03.jpg', 
+//             alt: 'image',
+//             orientation: 'vertical'
+//         },
+//         { 
+//             src: '/images/gallery/img-04.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-05.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-06.jpg', 
+//             alt: 'image',
+//             orientation: 'vertical'
+//         },
+//         { 
+//             src: '/images/gallery/img-07.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-08.jpg', 
+//             alt: 'image',
+//             orientation: 'vertical'
+//         },
+//         { 
+//             src: '/images/gallery/img-09.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-10.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-11.jpg', 
+//             alt: 'image',
+//             orientation: 'vertical'
+//         },
+//         { 
+//             src: '/images/gallery/img-12.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-13.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//         { 
+//             src: '/images/gallery/img-14.jpg', 
+//             alt: 'image',
+//             orientation: 'horizontal'
+//         },
+//     ]
+// }
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work };

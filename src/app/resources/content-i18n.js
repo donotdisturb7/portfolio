@@ -2,22 +2,18 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Rénald',
+        lastName:  'DESIRE',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        avatar:    '/images/avatar.JPEG',
+        location:  'America/Martinique',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['French', 'English']  // optional: Leave the array empty if you don't want to display languages
     }
 
-    const newsletter = {
-        display: true,
-        title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
-        description: <>{t("newsletter.description")}</>
-    }
+
 
     const social = [
         // Links are automatically displayed.
@@ -25,7 +21,7 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/donotdisturb7',
         },
         {
             name: 'LinkedIn',
@@ -40,8 +36,9 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:renalddesire55@gmail.com',
         },
+        
     ]
 
     const home = {
@@ -77,10 +74,10 @@ const createI18nContent = (t) => {
             title: t("about.work.title"),
             experiences: [
                 {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
+                    company: 'L3MA',
+                    timeframe: t("about.work.experiences.L3MA.timeframe"),
+                    role: t("about.work.experiences.L3MA.role"),
+                    achievements: t("about.work.experiences.L3MA.achievements").split(";"),
                     images: [ // optional: leave the array empty if you don't want to display images
                         {
                             src: '/images/projects/project-01/cover-01.jpg',
@@ -104,8 +101,8 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'IUT de la Martinique',
+                    description: <>{t(`about.studies.institutions.IUT de la Martinique.description`)}</>,
                 },
                 {
                     name: 'Build the Future',
@@ -248,7 +245,6 @@ const createI18nContent = (t) => {
     return {
         person,
         social,
-        newsletter,
         home,
         about,
         blog,

@@ -2,30 +2,26 @@
     "person": {
         "role": "Design Engineer"
     },
-    "newsletter": {
-        "title": "Subscribe to {firstName}'s Newsletter",
-        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
-        "button": "Sign up"
-    },
+
     "home": {
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+        "headline": "Etudiant en informatique",
+        "subline": "Je suis Rénald, un développeur web."
     },
     "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet {name}, {role} from {location}",
+        "label": "À propos de moi",
+        "title": "À propos de moi",
+        "description": "Rencontre {name}, {role} de {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
+            "description": ""
         },
         "work": {
-            "title": "Work Experience",
+            "title": "Curriculum Vitae",
             "experiences": {
-                "FLY": {
+                "L3MA": {
                     "timeframe": "2022 - Present",
                     "role": "Senior Design Engineer",
                     "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
@@ -34,22 +30,27 @@
                     "timeframe": "2018 - 2022",
                     "role": "Lead Designer",
                     "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
+                },
+                "Jo": {
+                    "timeframe": "2018 - 2022",
+                    "role": "Lead Designer",
+                    "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
                 }
             }
         },
         "studies": {
-            "title": "Studies",
+            "title": "Education",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Studied software engineering."
+                "IUT de la Martinique": {
+                    "description": "BUT Informatique : Parcours Réalisation d"
                 },
-                "Build the Future": {
-                    "description": "Studied online marketing and personal branding."
+                "2023 – 2026 ": {
+                    "description": "Bachelor universitaire de technologie Informatique."
                 }
             }
         },
         "technical": {
-            "title": "Technical skills",
+            "title": "Competences",
             "skills": {
                 "Figma": {
                     "description": "Able to prototype in Figma with Once UI with unnatural speed."
@@ -66,14 +67,9 @@
         "description": "Read what {name} has been up to recently"
     },
     "work": {
-        "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
-    },
-    "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
+        "label": "Mes projets",
+        "title": "Mes projets",
+        "description": "Design et développement de projets par {name}"
     },
     "projectCard": {
         "label": "Read Case Study"
