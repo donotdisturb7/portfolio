@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Heading, Flex, Text, Button,  Avatar, RevealFx, Arrow } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
+import { Tag } from '@/once-ui/components';
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
 import { Posts } from '@/components/blog/Posts';
@@ -95,6 +96,7 @@ export default function Home(
 								onBackground="neutral-weak"
 								variant="heading-default-xl">
 								{home.subline}
+								
 							</Text>
 						</RevealFx>
 						<RevealFx translateY="12" delay={0.4}>
@@ -123,9 +125,9 @@ export default function Home(
 					</Flex>
 				
 			</Flex>
-			{/* <RevealFx translateY="16" delay={0.6}>
+			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]} locale={locale}/>
-			</RevealFx> */}
+			</RevealFx>
 
 		</Flex>
 	);

@@ -87,11 +87,6 @@ export const Header = () => {
                     paddingLeft="12" fillWidth
                     alignItems="center"
                     textVariant="body-default-s">
-                    { display.location && (
-                        <Flex hide="s">
-                            {person.location}
-                        </Flex>
-                    )}
                 </Flex>
                 <Flex fillWidth justifyContent="center">
                     <Flex
@@ -160,11 +155,7 @@ export const Header = () => {
                                 ))}
                             </Flex>
                         }
-                        <Flex hide="s">
-                            { display.time && (
-                                <TimeDisplay timeZone={person.location}/>
-                            )}
-                        </Flex>
+
                     </Flex>
                 </Flex>
             </Flex>

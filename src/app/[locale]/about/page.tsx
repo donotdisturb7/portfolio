@@ -92,17 +92,7 @@ export default function About(
                     }),
                 }}
             />
-            { about.tableOfContent.display && (
-                <Flex
-                    style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
-                    position="fixed"
-                    paddingLeft="24" gap="32"
-                    direction="column" hide="s">
-                    <TableOfContents
-                        structure={structure}
-                        about={about} />
-                </Flex>
-            )}
+           
             <Flex
                 fillWidth
                 mobileDirection="column" justifyContent="center">

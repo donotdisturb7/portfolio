@@ -42,8 +42,9 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Rénald</>,
-    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>, où je suis le parcours réalisation d'applications web. Après les cours, je construis des projets personnels.</>
+    headline: <>Bonjour,  je suis Rénald</>,
+    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>. 
+    Je m'intéresse au développement web, aussi bien front-end que back-end, et je fais également un peu de Linux. Je consacre mon temps libre à la réalisation de projets personnels.</>
 }
 
 const about = {
@@ -60,7 +61,8 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Étudiant passionné d’informatique depuis toujours, je trouve une véritable joie à explorer le monde du code et des technologies. Mon amour pour l’informatique m’inspire à apprendre constamment et à contribuer au domaine.</>
+        description: <>
+    Je m'intéresse au développement web, aussi bien front-end que back-end, et je fais également un peu de Linux. Je consacre mon temps libre à la réalisation de projets personnels, en dehors de tout cela, je m'interesse beaucoup à la musique et je m'efforce egalement de me tenir en forme par la pratique de la musculation</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -75,12 +77,6 @@ const about = {
                     <>Création d'un système de modélisation pour analyser l'érosion des plages et l'évolution des zones côtières via la télédétection.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '',
-                        alt: '',
-                        width: 16,
-                        height: 9
-                    }
                 ]
             },
             // {
