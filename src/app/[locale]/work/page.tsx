@@ -4,7 +4,7 @@ import { Projects } from '@/components/work/Projects';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-
+import Head from 'next/head';
 export async function generateMetadata(
     {params: {locale}}: { params: { locale: string }}
 ) {
@@ -50,6 +50,7 @@ export default function Work(
     const { person, work } = renderContent(t);
 
     return (
+        
         <Flex
 			fillWidth maxWidth="m"
 			direction="column">
