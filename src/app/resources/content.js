@@ -27,9 +27,10 @@ const social = [
         link: 'https://www.linkedin.com/in/r%C3%A9nald-desire-ba47992b0/',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'Mon CV',
+        icon: 'curriculum',
+        link: 'https://drive.google.com/file/d/1ef73z2A7ibY7_jW6L0lL7Qr8jBK5-1oO/view?usp=sharing',
+        download: true,
     },
     {
         name: 'Email',
@@ -201,6 +202,12 @@ const about = {
                     },
                     {
                         src: '/images/arch.png',
+                        alt: 'Linux',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/figma.png',
                         alt: 'Linux',
                         width: 4,
                         height: 4

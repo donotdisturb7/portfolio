@@ -14,7 +14,7 @@ import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import Skills from '@/components/Skills';
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -166,6 +166,7 @@ export default function About({
                 gap="8"
                 wrap
               >
+                
                 {social.map(
                   (item) =>
                     item.link && (
@@ -176,6 +177,7 @@ export default function About({
                         label={item.name}
                         size="s"
                         variant="tertiary"
+                        download={item.download || undefined} // Pass download prop conditionally
                       />
                     )
                 )}
@@ -335,30 +337,27 @@ export default function About({
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
                         {skill.images.map((image, index) => (
                           <Flex
-                          key={index}
-                          direction="column"
-                          alignItems="center"
-                          minWidth={image.width}
-                          height={image.height}
-                          style={{
-                            width: `${image.width}rem`, // Fixer la largeur du conteneur
-                        }}
-                      >
-                          
-                          <SmartImage
+                            key={index}
+                            direction="column"
+                            alignItems="center"
+                            minWidth={image.width}
+                            height={image.height}
+                            style={{
+                              width: `${image.width}rem`, // Fixer la largeur du conteneur
+                            }}
+                          >
+                            <SmartImage
                               radius="m"
                               sizes={image.width.toString()}
                               alt={image.alt}
                               src={image.src}
                               style={{
-                                width: '100%', // L'image occupe toute la largeur du conteneur
+                                width: "100%", // L'image occupe toute la largeur du conteneur
                                 height: `${image.height}rem`, // Hauteur fixe
-                                objectFit: 'contain', // Maintenir les proportions
-                            }}
-                          />
-                         
-                  
-                      </Flex>
+                                objectFit: "contain", // Maintenir les proportions
+                              }}
+                            />
+                          </Flex>
                         ))}
                       </Flex>
                     )}
