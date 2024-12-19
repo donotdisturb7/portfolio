@@ -24,7 +24,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/r%C3%A9nald-desire-ba47992b0/',
     },
     {
         name: 'X',
@@ -34,7 +34,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:renalddesire55@gmail.com',
     },
 ]
 
@@ -43,7 +43,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Bonjour,  je suis Rénald</>,
-    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>. 
+    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>. <br />
     Je m'intéresse au développement web, aussi bien front-end que back-end, et je fais également un peu de Linux. Je consacre mon temps libre à la réalisation de projets personnels.</>
 }
 
@@ -109,42 +109,126 @@ const about = {
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Compétences',
+        title: 'Skills',
         skills: [
             {
-                title: 'Compétence',
-                description: <>.</>,
-                // optional: leave the array empty if you don't want to display images
+                title: 'Front-end',
+                description: <></>,
                 images: [
                     {
-                        src: '',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        src: '/images/react.svg',
+                        alt: 'React',
+                        width: 4,
+                        height: 4
                     },
                     {
-                        src: '',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        src: '/images/vite.png',
+                        alt: 'Vite',
+                        width: 4,
+                        height: 4
                     },
+                    {
+                        src: '/images/tailwind.png',
+                        alt: 'Tailwind',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/js.png',
+                        alt: 'JS',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/vue.png',
+                        alt: 'JS',
+                        width: 4,
+                        height: 4
+                    }
                 ]
             },
             {
-                title: 'Compétence',
-                description: <>.</>,
-                // optional: leave the array empty if you don't want to display images
+                title: 'Back-end',
+                description: <></>,
                 images: [
                     {
-                        src: '',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        src: '/images/laravel.png',
+                        alt: 'Laravel',
+                        width: 4,
+                        height: 4
                     },
+                    {
+                        src: '/images/php.png',
+                        alt: 'PHP',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/mysql.png',
+                        alt: 'MySQL',
+                        width: 4,
+                        height: 4
+                    }
+                ]
+            },
+            {
+                title: 'DevOps & Tools',
+                description: <></>,
+                images: [
+                    {
+                        src: '/images/docker.png',
+                        alt: 'Docker',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/git.png',
+                        alt: 'Git',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/bash.png',
+                        alt: 'Bash',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/github.svg',
+                        alt: 'Bash',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/arch.png',
+                        alt: 'Linux',
+                        width: 4,
+                        height: 4
+                    }
+                ]
+            },
+            {
+                title: 'Programming Languages',
+                description: <></>,
+                images: [
+                    {
+                        src: '/images/python.png',
+                        alt: 'Python',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/js.png',
+                        alt: 'JS',
+                        width: 4,
+                        height: 4
+                    }
                 ]
             }
         ]
     }
+    
+    
 }
 
 const blog = {
@@ -163,83 +247,6 @@ const work = {
     // All projects will be listed on the /home and /work routes
 }
 
-// const gallery = {
-//     label: 'Gallery',
-//     title: 'My photo gallery',
-//     description: `A photo collection by ${person.name}`,
-//     // Images from https://pexels.com
-//     images: [
-//         { 
-//             src: '/images/gallery/img-01.jpg', 
-//             alt: 'image',
-//             orientation: 'vertical'
-//         },
-//         { 
-//             src: '/images/gallery/img-02.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-03.jpg', 
-//             alt: 'image',
-//             orientation: 'vertical'
-//         },
-//         { 
-//             src: '/images/gallery/img-04.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-05.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-06.jpg', 
-//             alt: 'image',
-//             orientation: 'vertical'
-//         },
-//         { 
-//             src: '/images/gallery/img-07.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-08.jpg', 
-//             alt: 'image',
-//             orientation: 'vertical'
-//         },
-//         { 
-//             src: '/images/gallery/img-09.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-10.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-11.jpg', 
-//             alt: 'image',
-//             orientation: 'vertical'
-//         },
-//         { 
-//             src: '/images/gallery/img-12.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-13.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//         { 
-//             src: '/images/gallery/img-14.jpg', 
-//             alt: 'image',
-//             orientation: 'horizontal'
-//         },
-//     ]
-// }
+
 
 export { person, social, home, about, blog, work };

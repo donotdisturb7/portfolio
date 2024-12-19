@@ -26,7 +26,7 @@ const createI18nContent = (t) => {
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/r%C3%A9nald-desire-ba47992b0/',
         },
         {
             name: 'X',
