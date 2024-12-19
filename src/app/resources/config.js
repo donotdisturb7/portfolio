@@ -23,6 +23,7 @@ const protectedRoutes = {
     '/work/automate-design-handovers-with-a-figma-to-code-pipeline': false
 }
 
+
 const effects = {
     mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
@@ -32,7 +33,7 @@ const effects = {
     dots: {
         display: true,
         opacity: 0.4,           // 0 - 1
-        size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
+        size: '24'              
     },
     lines: {
         display: false,
