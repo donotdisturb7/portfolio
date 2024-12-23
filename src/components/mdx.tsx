@@ -1,12 +1,11 @@
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc';
 import React, { ReactNode } from 'react';
-
 import { SmartImage, SmartLink, Text } from '@/once-ui/components';
 import { CodeBlock } from '@/once-ui/modules';
 import { HeadingLink } from '@/components';
-
 import { TextProps } from '@/once-ui/interfaces';
 import { SmartImageProps } from '@/once-ui/components/SmartImage';
+import { Flex } from '@/once-ui/components';
 
 type TableProps = {
     data: {
@@ -122,6 +121,60 @@ function createParagraph({ children }: TextProps) {
     );
 };
 
+type ImageGridProps = {
+    images: Array<{
+      width: number;
+      height: number;
+      alt: string;
+      src: string;
+    }>;
+  };
+  
+  // Composant ImageGrid
+  function ImageGrid({ images }: ImageGridProps) {
+    if (!images || images.length === 0) return null;
+    
+    return (
+      <Flex 
+        fillWidth 
+        paddingTop="m" 
+        gap="12" 
+        wrap
+        justifyContent="center"  // Ajout de cette ligne pour centrer
+      >
+        {images.map((image, index) => (
+          <Flex
+            key={index}
+            direction="column"
+            alignItems="center"
+            minWidth={image.width}
+            height={image.height}
+            style={{
+              width: `${image.width}rem`,
+            }}
+          >
+            <SmartImage
+              radius="m"
+              sizes={image.width.toString()}
+              alt={image.alt}
+              src={image.src}
+              style={{
+                width: "100%",
+                height: `${image.height}rem`,
+                objectFit: "contain",
+              }}
+            />
+          </Flex>
+        ))}
+      </Flex>
+    );
+  }
+
+type CustomMDXProps = MDXRemoteProps & {
+    components?: typeof components;
+};
+
+
 const components = {
     p: createParagraph as any,
     h1: createHeading(1) as any,
@@ -133,11 +186,8 @@ const components = {
     img: createImage as any,
     a: CustomLink as any,
     Table,
-    CodeBlock
-};
-
-type CustomMDXProps = MDXRemoteProps & {
-    components?: typeof components;
+    CodeBlock,
+    ImageGrid // Ajout du nouveau composant
 };
 
 export function CustomMDX(props: CustomMDXProps) {
