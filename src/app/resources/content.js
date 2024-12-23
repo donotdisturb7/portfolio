@@ -145,6 +145,18 @@ const about = {
                         alt: 'JS',
                         width: 4,
                         height: 4
+                    },
+                    {
+                        src: '/images/html.png',
+                        alt: 'JS',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/css.png',
+                        alt: 'JS',
+                        width: 4,
+                        height: 4
                     }
                 ]
             },
