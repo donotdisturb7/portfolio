@@ -185,7 +185,7 @@ const about = {
                 ]
             },
             {
-                title: 'DevOps & Tools',
+                title: 'DevOps & Outils',
                 description: <></>,
                 images: [
                     {
@@ -227,7 +227,7 @@ const about = {
                 ]
             },
             {
-                title: 'Programming Languages',
+                title: 'Langage de programmation',
                 description: <></>,
                 images: [
                     {
