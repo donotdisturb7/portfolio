@@ -28,14 +28,14 @@ export async function generateMetadata(
 		metadataBase: new URL(`https://${baseURL}/${locale}`),
 		title: home.title,
 		description: home.description,
-		openGraph: {
-			title: `${person.firstName}'s Portfolio`,
-			description: 'Portfolio website showcasing my work.',
-			url: baseURL,
-			siteName: `${person.firstName}'s Portfolio`,
-			locale: 'en_US',
-			type: 'website',
-		},
+		// openGraph: {
+		// 	title: `${person.firstName}'s Portfolio`,
+		// 	description: 'Portfolio website showcasing my work.',
+		// 	url: baseURL,
+		// 	siteName: `${person.firstName}'s Portfolio`,
+		// 	locale: 'en_US',
+		// 	type: 'website',
+		// },
 		robots: {
 			index: true,
 			follow: true,
