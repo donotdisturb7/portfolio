@@ -181,7 +181,20 @@ const about = {
                         alt: 'MySQL',
                         width: 4,
                         height: 4
+                    },
+                    {
+                        src: '/images/postgresql.svg',
+                        alt: 'PostGreSQL',
+                        width: 4,
+                        height: 4
+                    },
+                    {
+                        src: '/images/supabase.svg',
+                        alt: 'Supabase',
+                        width: 4,
+                        height: 4
                     }
+
                 ]
             },
             {

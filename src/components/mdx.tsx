@@ -7,6 +7,7 @@ import { TextProps } from '@/once-ui/interfaces';
 import { SmartImageProps } from '@/once-ui/components/SmartImage';
 import { Flex } from '@/once-ui/components';
 
+
 type TableProps = {
     data: {
         headers: string[];
@@ -187,7 +188,8 @@ const components = {
     a: CustomLink as any,
     Table,
     CodeBlock,
-    ImageGrid // Ajout du nouveau composant
+    ImageGrid,
+     // Ajout du nouveau composant
 };
 
 export function CustomMDX(props: CustomMDXProps) {
