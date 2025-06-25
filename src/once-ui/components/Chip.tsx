@@ -2,7 +2,10 @@
 
 import React, { ReactNode, HTMLAttributes, MouseEventHandler, forwardRef } from 'react';
 import classNames from 'classnames';
-import { Text, Icon, IconButton, IconButtonProps, Flex } from '.';
+import { Text } from './Text';
+import { Icon } from './Icon';
+import { IconButton, IconButtonProps } from './IconButton';
+import { Flex } from './Flex';
 import styles from './Chip.module.scss';
 
 interface ChipProps extends HTMLAttributes<HTMLDivElement> {

@@ -2,7 +2,7 @@
 
 import React, { ReactNode, forwardRef, HTMLAttributes } from 'react';
 
-import { Text } from '.';
+import { Text } from './Text';
 import classNames from 'classnames';
 import styles from './Kbd.module.scss';
 

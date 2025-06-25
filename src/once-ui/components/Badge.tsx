@@ -1,7 +1,11 @@
 'use client';
 
 import React, { forwardRef } from 'react';
-import { Arrow, Flex, Icon, SmartLink, Text } from '.';
+import { Arrow } from './Arrow';
+import { Flex } from './Flex';
+import { Icon } from './Icon';
+import { SmartLink } from './SmartLink';
+import { Text } from './Text';
 
 import styles from './Badge.module.scss'
 import classNames from 'classnames';

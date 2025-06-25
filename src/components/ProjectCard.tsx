@@ -2,10 +2,10 @@
 
 import { AvatarGroup, Flex, Heading, RevealFx, SmartImage, SmartLink, Text } from "@/once-ui/components";
 import { useEffect, useState } from "react";
-import { useTranslations } from 'next-intl';
 
 interface ProjectCardProps {
-    href: string;
+    slug: string;
+    basePath: string;
     images: string[];
     title: string;
     content: string;
@@ -14,7 +14,8 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
-    href,
+    slug,
+    basePath,
     images = [],
     title,
     content,
@@ -23,8 +24,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
-
-    const t = useTranslations();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -135,10 +134,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             <SmartLink
                                 suffixIcon="chevronRight"
                                 style={{margin: '0', width: 'fit-content'}}
-                                href={href}>
+                                href={`/${basePath}/${slug}`}>
                                     <Text
                                         variant="body-default-s">
-                                       {t("projectCard.label")}
+                                       Voir le projet
                                     </Text>
                             </SmartLink>
                         )}

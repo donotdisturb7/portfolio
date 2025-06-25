@@ -2,7 +2,7 @@
 
 import React, { useState, forwardRef } from 'react';
 import styles from './NavIcon.module.scss';
-import { Flex } from '.';
+import { Flex } from './Flex';
 
 interface NavIconProps {
     className?: string;

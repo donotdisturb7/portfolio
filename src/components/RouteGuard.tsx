@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { usePathname } from '@/i18n/routing';
+import { usePathname } from 'next/navigation';
 import { routes, protectedRoutes } from '@/app/resources';
 import { Flex, Spinner, Input, Button, Heading } from '@/once-ui/components';
 
@@ -32,7 +32,7 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
                     return routes[pathname as keyof typeof routes];
                 }
 
-                const dynamicRoutes = ['/blog', '/work'] as const;
+                const dynamicRoutes = ['/blog', '/work', '/competences'] as const;
                 for (const route of dynamicRoutes) {
                     if (pathname?.startsWith(route) && routes[route]) {
                         return true;

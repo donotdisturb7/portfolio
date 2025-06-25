@@ -1,7 +1,10 @@
 'use client';
 
 import React, {  useRef, forwardRef } from 'react';
-import { Flex, Input, InputProps, IconButton, Icon } from '.';
+import { Flex } from './Flex';
+import { Input, InputProps } from './Input';
+import { IconButton } from './IconButton';
+import { Icon } from './Icon';
 
 interface ColorInputProps extends Omit<InputProps, 'onChange' | 'value'> {
     value: string;

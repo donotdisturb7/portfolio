@@ -3,7 +3,7 @@
 import React, { forwardRef, ReactNode } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
-import { Icon } from '.';
+import { Icon } from './Icon';
 
 interface SmartLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;

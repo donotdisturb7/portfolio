@@ -1,0 +1,104 @@
+---
+title: "Gérer les données de l'information"
+subtitle: "Application de gestion de prêt étudiant"
+publishedAt: "2024-01-18"
+summary: "Concevoir et développer une base de données complète pour gérer les prêts d'objets avec PHP, MySQL, Vue.js et TailwindCSS"
+image: "/images/projects/project-04/home.png"
+---
+
+# Gérer les données de l'information
+
+## Niveau 1 - Concevoir et mettre en place une base de données à partir d'un cahier des charges client
+
+### Mettre à jour et interroger une base de données relationnelle
+
+**Description :** Dans la SAE 1.04 nous avons configuré, créé et manipulé une base de données.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Créé des requêtes SQL complexes pour extraire les statistiques de prêts (taux de retour, objets populaires, étudiants actifs)
+- Implémenté des jointures multiples entre les tables étudiants, objets, prêts et retours
+- Utilisé des sous-requêtes pour calculer les prêts en retard et les pénalités
+- Créé des vues pour simplifier l'accès aux données fréquemment consultées
+- Optimisé les requêtes avec des index sur les colonnes les plus utilisées
+
+**Technologies utilisées :** MySQL, requêtes SQL avancées, jointures complexes, sous-requêtes, vues et index
+
+### Visualiser des données
+
+**Description :** Dans la SAE 1.04 nous avons configuré, créé et manipulé une base de données.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Développé des graphiques avec Chart.js pour visualiser les statistiques de prêts par mois
+- Créé un tableau de bord administrateur avec métriques en temps réel (prêts actifs, retards, disponibilité)
+- Implémenté des filtres dynamiques pour explorer les données par étudiant, objet ou période
+- Conçu des rapports visuels pour identifier les tendances d'utilisation des objets
+- Créé des exports PDF avec graphiques pour les rapports mensuels
+
+**Technologies utilisées :** Google sheets, 
+
+### Concevoir une base de données relationnelle à partir d'un cahier des charges
+
+**Description :** Dans la SAÉ1.04 Création d'une base de données, nous avons conçu une base de données en fonction d'un cahier des charges.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Analysé le cahier des charges : gestion des étudiants, objets empruntables, prêts et retours
+- Créé le modèle conceptuel avec diagramme entité-relation (Étudiant, Objet, Prêt, Catégorie)
+- Normalisé la base jusqu'à la 3ème forme normale pour éviter la redondance
+- Défini les contraintes d'intégrité : clés primaires, étrangères, contraintes de check
+- Implémenté le schéma physique avec optimisation des types de données (DATE, DECIMAL, ENUM)
+
+**Technologies utilisées :** Modélisation conceptuelle, MySQL, normalisation de base de données, contraintes d'intégrité
+
+## Niveau 2 - Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité
+
+### Optimiser les modèles de données de l'entreprise
+
+**Description :** Améliorer les performances et l'efficacité des bases de données existantes.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Analysé les performances avec EXPLAIN pour identifier les requêtes lentes
+- Créé des index composites sur (etudiant_id, date_pret) pour optimiser les recherches
+- Implémenté une table de cache pour les statistiques fréquemment consultées
+- Optimisé les requêtes de rapport en utilisant des procédures stockées
+- Ajouté une table d'historique pour archiver les anciens prêts et améliorer les performances
+
+**Technologies utilisées :** Optimisation MySQL, index composites, procédures stockées, mise en cache, archivage de données
+
+### Assurer la confidentialité des données (intégrité et sécurité)
+
+**Description :** Protéger les données sensibles et garantir leur intégrité et confidentialité.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Chiffré les données personnelles sensibles (numéros étudiants, coordonnées)
+- Implémenté un système de rôles (administrateur, gestionnaire, étudiant) avec permissions différenciées
+- Configuré l'audit trail pour tracer toutes les modifications de prêts
+- Anonymisé les données dans l'environnement de développement
+- Mis en place des sauvegardes chiffrées automatiques avec rétention de 30 jours
+
+**Technologies utilisées :** 
+
+### Organiser la restitution des données à travers la programmation et la visualisation
+
+**Description :** Créer des interfaces et APIs pour exposer les données de manière structurée et sécurisée.
+
+**Ce que j'ai fait dans l'Application de Prêt Étudiant :**
+- Développé une API REST avec PHP pour exposer les données aux applications clientes
+- Créé des endpoints sécurisés pour les différents rôles utilisateur
+- Implémenté un système d'export en CSV et Excel pour les gestionnaires
+- Conçu des tableaux de bord interactifs avec Vue.js et TailwindCSS
+- Mis en place des notifications automatiques par email pour les rappels de retour
+
+**Technologies utilisées :** API REST en PHP, authentification par tokens, Vue.js, 
+### Manipuler des données hétérogènes
+
+**Description :** Intégrer et traiter des données provenant de sources multiples et de formats différents.
+
+**Ce que j'ai fait dans le ChatBot AI avec Ollama :**
+- Traité des flux audio en temps réel pour la reconnaissance vocale (Speech-to-Text API)
+- Converti les données audio en texte puis en prompts pour le LLM Ollama
+- Intégré les réponses textuelles du LLM avec l'API ElevenLabs pour la synthèse vocale
+- Géré les formats de données multiples : audio (WAV, MP3), texte (UTF-8), JSON (APIs)
+- Synchronisé les flux de données asynchrones entre WebSockets, LLM local et APIs externes
+- Optimisé les conversions de formats pour minimiser la latence du chatbot
+
+**Technologies utilisées :** Audio processing, Speech-to-Text API, LLM Ollama, ElevenLabs TTS, WebSockets, format conversion 

@@ -6,7 +6,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Etudiant en informatique',
+    role:      'Développeur backend',
     avatar:    '/images/avatar.JPEG',
     location:  'America/Martinique',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['French', 'English']  // optional: Leave the array empty if you don't want to display languages
@@ -29,7 +29,7 @@ const social = [
     {
         name: 'Mon CV',
         icon: 'curriculum',
-        link: 'https://drive.google.com/file/d/1ef73z2A7ibY7_jW6L0lL7Qr8jBK5-1oO/view?usp=sharing',
+        link: 'https://drive.google.com/file/d/19zFY1rUKw8Qf7hudi9aFlycOBmXnN-x4/view?usp=sharing',
         download: true,
     },
     {
@@ -44,8 +44,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Bonjour,  je suis Rénald</>,
-    subline: <>Etudiant en informatique à <InlineCode>IUT de la Martinique</InlineCode>. <br />
-    Je m'intéresse au développement web, aussi bien front-end que back-end, et je fais également un peu de Linux. Je consacre mon temps libre à la réalisation de projets personnels.</>
+    subline: <>Actuellement en 3ème année de BUT Informatique, je suis un développeur backend passionné. Je consacre mon temps libre à la réalisation de projets personnels.</>
 }
 
 const about = {
@@ -63,12 +62,23 @@ const about = {
         display: true,
         title: 'Introduction',
         description: <>
-    Je m'intéresse au développement web, aussi bien front-end que back-end, et je fais également un peu de Linux. Je consacre mon temps libre à la réalisation de projets personnels, en dehors de tout cela, je m'interesse beaucoup à la musique et je m'efforce egalement de me tenir en forme par la pratique de la musculation</>
+    Je m'intéresse au développement web, aussi bien front-end que back-end, et j'utilise Linux comme système d'exploitation au quotidien. Je consacre mon temps libre à la réalisation de projets personnels, en dehors de tout cela, je m'interesse beaucoup à la musique et je m'efforce egalement de me tenir en forme par la pratique de la musculation</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Expériences Professionnelles',
         experiences: [
+            {
+                company: 'Kweevo',
+                timeframe: '14 Avril - 6 Juin 2025',
+                role: 'Développeur DevOps/DataOps Junior',
+                achievements: [
+                    <>Développement d'API Python pour la gestion et l'analyse des données opérationnelles.</>,
+                    <>Intégration de systèmes d'IA pour automatiser et optimiser les flux de travail de données.</>,
+                    <>Création d'API d'IA pour permettre l'accès et l'utilisation des modèles d'apprentissage automatique dans les applications.</>
+                ],
+                images: [ ]
+            },
             {
                 company: 'IUT de la Martinique : L3MA',
                 timeframe: 'Juin 2024 ',
@@ -80,16 +90,7 @@ const about = {
                 images: [ // optional: leave the array empty if you don't want to display images
                 ]
             },
-            // {
-            //     company: 'Creativ3',
-            //     timeframe: '2018 - 2022',
-            //     role: 'Lead Designer',
-            //     achievements: [
-            //         <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-            //         <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-            //     ],
-            //     images: [ ]
-            // }
+            
         ]
     },
     studies: {
@@ -98,7 +99,7 @@ const about = {
         institutions: [
             {
                 name: 'IUT de la Martinique : 2023 -> 2026',
-                description: <>Bachelor universitaire de technologie Informatique.</>,
+                description: <>3ème année de Bachelor universitaire de technologie Informatique.</>,
             },
 ,
             {
@@ -113,148 +114,47 @@ const about = {
         title: 'Skills',
         skills: [
             {
+                title: 'Langages',
+                description: <></>,
+                images: [
+                    { src: '/images/skills/python.png', alt: 'Python', width: 4, height: 4 },
+                    { src: '/images/skills/js.png', alt: 'JavaScript', width: 4, height: 4 },
+                    { src: '/images/skills/php.png', alt: 'PHP', width: 4, height: 4 }
+                ]
+            },
+            {
                 title: 'Front-end',
                 description: <></>,
                 images: [
-                    {
-                        src: '/images/react.svg',
-                        alt: 'React',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/vite.png',
-                        alt: 'Vite',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/tailwind.png',
-                        alt: 'Tailwind',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/js.png',
-                        alt: 'JS',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/vue.png',
-                        alt: 'JS',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/html.png',
-                        alt: 'JS',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/css.png',
-                        alt: 'JS',
-                        width: 4,
-                        height: 4
-                    }
+                    { src: '/images/skills/react.svg', alt: 'React', width: 4, height: 4 },
+                    { src: '/images/skills/vite.png', alt: 'Vite', width: 4, height: 4 },
+                    { src: '/images/skills/tailwind.png', alt: 'Tailwind', width: 4, height: 4 },
+                    { src: '/images/skills/js.png', alt: 'JavaScript', width: 4, height: 4 },
+                    { src: '/images/skills/vue.png', alt: 'Vue.js', width: 4, height: 4 },
+                    { src: '/images/skills/html.png', alt: 'HTML', width: 4, height: 4 },
+                    { src: '/images/skills/css.png', alt: 'CSS', width: 4, height: 4 }
                 ]
             },
             {
                 title: 'Back-end',
                 description: <></>,
                 images: [
-                    {
-                        src: '/images/laravel.png',
-                        alt: 'Laravel',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/php.png',
-                        alt: 'PHP',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/mysql.png',
-                        alt: 'MySQL',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/postgresql.svg',
-                        alt: 'PostGreSQL',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/supabase.svg',
-                        alt: 'Supabase',
-                        width: 4,
-                        height: 4
-                    }
-
+                    { src: '/images/skills/laravel.png', alt: 'Laravel', width: 4, height: 4 },
+                    { src: '/images/skills/php.png', alt: 'PHP', width: 4, height: 4 },
+                    { src: '/images/skills/mysql.png', alt: 'MySQL', width: 4, height: 4 },
+                    { src: '/images/skills/postgresql.svg', alt: 'PostGreSQL', width: 4, height: 4 },
+                    { src: '/images/skills/supabase.svg', alt: 'Supabase', width: 4, height: 4 }
                 ]
             },
             {
                 title: 'DevOps & Outils',
                 description: <></>,
                 images: [
-                    {
-                        src: '/images/docker.png',
-                        alt: 'Docker',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/git.png',
-                        alt: 'Git',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/bash.png',
-                        alt: 'Bash',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/github.svg',
-                        alt: 'Bash',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/arch.png',
-                        alt: 'Linux',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/figma.png',
-                        alt: 'Linux',
-                        width: 4,
-                        height: 4
-                    }
-                ]
-            },
-            {
-                title: 'Langage de programmation',
-                description: <></>,
-                images: [
-                    {
-                        src: '/images/python.png',
-                        alt: 'Python',
-                        width: 4,
-                        height: 4
-                    },
-                    {
-                        src: '/images/js.png',
-                        alt: 'JS',
-                        width: 4,
-                        height: 4
-                    }
+                    { src: '/images/skills/docker.png', alt: 'Docker', width: 4, height: 4 },
+                    { src: '/images/skills/git.png', alt: 'Git', width: 4, height: 4 },
+                    { src: '/images/skills/bash.png', alt: 'Bash', width: 4, height: 4 },
+                    { src: '/images/skills/github.svg', alt: 'GitHub', width: 4, height: 4 },
+                    { src: '/images/skills/arch.png', alt: 'Arch Linux', width: 4, height: 4 }
                 ]
             }
         ]

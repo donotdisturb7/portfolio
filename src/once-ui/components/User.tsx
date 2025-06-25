@@ -3,7 +3,11 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
-import { Flex, Text, Skeleton, Tag, TagProps, Avatar, AvatarProps } from '.';
+import { Flex } from './Flex';
+import { Text } from './Text';
+import { Skeleton } from './Skeleton';
+import { Tag, TagProps } from './Tag';
+import { Avatar, AvatarProps } from './Avatar';
 
 interface UserProps {
     name?: string;

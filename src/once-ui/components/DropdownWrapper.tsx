@@ -2,7 +2,8 @@
 
 import React, { useState, useRef, useEffect, ReactNode, forwardRef, useImperativeHandle } from 'react';
 import { useFloating, shift, offset, flip, size, autoUpdate } from '@floating-ui/react-dom';
-import { Flex, Dropdown, DropdownProps, DropdownOptions } from '.';
+import { Flex } from './Flex';
+import { Dropdown, DropdownProps, DropdownOptions } from './Dropdown';
 import styles from './Select.module.scss';
 import classNames from 'classnames';
 

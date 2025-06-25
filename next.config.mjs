@@ -1,16 +1,20 @@
 import mdx from '@next/mdx';
-import createNextIntlPlugin from 'next-intl/plugin';
 
 const withMDX = mdx({
     extension: /\.mdx?$/,
-    options: { },
+    options: {
+        development: process.env.NODE_ENV === 'development',
+        remarkPlugins: [],
+        rehypePlugins: [],
+    },
 });
-
-const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+    experimental: {
+        mdxRs: false,
+    },
 };
 
-export default withNextIntl(withMDX(nextConfig));
+export default withMDX(nextConfig);

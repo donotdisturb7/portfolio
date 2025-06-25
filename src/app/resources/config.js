@@ -5,16 +5,17 @@ const i18n = false;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
-    locales: ['en'],            // A list of all locales that are supported, e.g. ['en','id']
-    defaultLocale: 'en'         // Locale used by default and as a fallback
+    locales: ['fr'],            // A list of all locales that are supported, e.g. ['en','id']
+    defaultLocale: 'fr'         // Locale used by default and as a fallback
 }
 
 const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': true,
+    '/':            true,
+    '/about':       true,
+    '/work':        true,
+    '/blog':        false,
+    '/competences': true,
+
 }
 
 // Enable password protection on selected routes

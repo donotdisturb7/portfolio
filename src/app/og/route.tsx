@@ -1,6 +1,5 @@
 import { ImageResponse } from 'next/og'
-import { baseURL, renderContent } from '@/app/resources';
-import { getTranslations } from 'next-intl/server';
+import { baseURL } from '@/app/resources';
 
 export const runtime = 'edge';
 
@@ -12,8 +11,11 @@ export async function GET(request: Request) {
     ).then((res) => res.arrayBuffer());
     const fontData = await font;
 
-    const t = await getTranslations();
-    const { person } = renderContent(t);
+    const person = {
+        name: 'Rénald DESIRE',
+        role: 'Développeur Full Stack',
+        avatar: '/images/avatar.JPEG'
+    };
 
     return new ImageResponse(
         (

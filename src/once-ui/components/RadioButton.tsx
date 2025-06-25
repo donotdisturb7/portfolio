@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, forwardRef } from 'react';
 import classNames from 'classnames';
-import { Flex, InteractiveDetails, InteractiveDetailsProps } from '.';
+import { Flex } from './Flex';
+import { InteractiveDetails, InteractiveDetailsProps } from './InteractiveDetails';
 import styles from './SharedInteractiveStyles.module.scss';
 
 interface RadioButtonProps extends Omit<InteractiveDetailsProps, 'onClick'>, React.InputHTMLAttributes<HTMLInputElement> {

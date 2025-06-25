@@ -3,7 +3,8 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 
-import { Flex, Toast } from '.';
+import { Flex } from './Flex';
+import { Toast } from './Toast';
 import styles from './Toaster.module.scss';
 
 interface ToasterProps {

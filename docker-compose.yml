@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  apache:
+    build: .
+    container_name: apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/usr/local/apache2/htdocs/
+      - ./logs:/usr/local/apache2/logs/
+    restart: unless-stopped
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data 

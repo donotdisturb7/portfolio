@@ -3,7 +3,9 @@
 import React, { forwardRef, HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import { Flex, Text, Icon } from '.';
+import { Flex } from './Flex';
+import { Text } from './Text';
+import { Icon } from './Icon';
 import styles from './Tag.module.scss';
 
 interface TagProps extends HTMLAttributes<HTMLDivElement> {

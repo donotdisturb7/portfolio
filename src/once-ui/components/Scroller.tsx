@@ -2,7 +2,8 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
-import { Flex, IconButton } from '.';
+import { Flex } from './Flex';
+import { IconButton } from './IconButton';
 import styles from './Scroller.module.scss';
 
 interface ScrollerProps {

@@ -1,7 +1,10 @@
 'use client'
 
 import React, { useEffect, useState, forwardRef } from 'react';
-import { IconButton, Icon, Flex, Text } from '.';
+import { IconButton } from './IconButton';
+import { Icon } from './Icon';
+import { Flex } from './Flex';
+import { Text } from './Text';
 import classNames from 'classnames';
 import styles from './Toast.module.scss';
 

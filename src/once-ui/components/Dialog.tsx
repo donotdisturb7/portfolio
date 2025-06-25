@@ -3,7 +3,11 @@
 import React, { ReactNode, useEffect, useCallback, useRef, forwardRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
-import { Flex, Heading, IconButton, Button, ButtonProps, Text } from '.';
+import { Flex } from './Flex';
+import { Heading } from './Heading';
+import { IconButton } from './IconButton';
+import { Button, ButtonProps } from './Button';
+import { Text } from './Text';
 import styles from './Dialog.module.scss';
 
 interface DialogButtonProps extends Partial<ButtonProps> {

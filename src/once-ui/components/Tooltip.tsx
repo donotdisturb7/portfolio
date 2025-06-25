@@ -3,7 +3,9 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
-import { Flex, Text, Icon } from '.';
+import { Flex } from './Flex';
+import { Text } from './Text';
+import { Icon } from './Icon';
 
 type TooltipProps = {
     label: string;

@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, forwardRef, TextareaHTMLAttributes } from 'react';
 import classNames from 'classnames';
-import { Flex, Text } from '.';
+import { Flex } from './Flex';
+import { Text } from './Text';
 import styles from './Input.module.scss';
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {

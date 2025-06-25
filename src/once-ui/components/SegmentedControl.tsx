@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Flex, ToggleButton, Scroller } from '.';
+import { Flex } from './Flex';
+import { ToggleButton } from './ToggleButton';
+import { Scroller } from './Scroller';
 
 interface ButtonOption {
     label?: React.ReactNode;

@@ -1,13 +1,35 @@
-import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components"
-import { useTranslations } from "next-intl";
 import styles from './Footer.module.scss'
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
 
-    const t = useTranslations();
-    const { person, social } = renderContent(t);
+    const person = {
+        name: 'Rénald DESIRE',
+    };
+
+    const social = [
+        {
+            name: 'GitHub',
+            icon: 'github',
+            link: 'https://github.com/donotdisturb7',
+        },
+        {
+            name: 'LinkedIn',
+            icon: 'linkedin',
+            link: 'https://www.linkedin.com/in/r%C3%A9nald-desire-ba47992b0/',
+        },
+        {
+            name: 'Email',
+            icon: 'email',
+            link: 'mailto:renalddesire55@gmail.com',
+        },
+        {
+            name: 'CV',
+            icon: 'curriculum',
+            link: 'https://drive.google.com/file/d/19zFY1rUKw8Qf7hudi9aFlycOBmXnN-x4/view?usp=sharing',
+        }
+    ];
 
     return (
         <Flex

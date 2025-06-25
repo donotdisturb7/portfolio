@@ -3,7 +3,7 @@
 import React, { forwardRef, ReactNode, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
 import Link from 'next/link';
 
-import { Icon } from '.';
+import { Icon } from './Icon';
 import styles from './ToggleButton.module.scss';
 
 interface CommonProps {

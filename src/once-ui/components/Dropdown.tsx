@@ -2,7 +2,8 @@
 
 import React, { useState, useRef, useEffect, KeyboardEvent, ReactNode, forwardRef, HTMLAttributes, useImperativeHandle } from 'react';
 import classNames from 'classnames';
-import { Flex, Text } from '.';
+import { Flex } from './Flex';
+import { Text } from './Text';
 import styles from './Dropdown.module.scss';
 
 interface DropdownOptions {

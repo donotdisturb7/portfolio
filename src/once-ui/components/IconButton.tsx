@@ -3,7 +3,8 @@
 import React, { forwardRef, useState, useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 
-import { Icon, Tooltip } from '.';
+import { Icon } from './Icon';
+import { Tooltip } from './Tooltip';
 import buttonStyles from './Button.module.scss';
 import iconStyles from './IconButton.module.scss';
 

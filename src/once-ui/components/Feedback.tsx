@@ -1,7 +1,11 @@
 'use client';
 
 import React, { forwardRef, ReactNode } from 'react';
-import { IconButton, Button, Icon, Flex, Text } from '.';
+import { IconButton } from './IconButton';
+import { Button } from './Button';
+import { Icon } from './Icon';
+import { Flex } from './Flex';
+import { Text } from './Text';
 
 interface FeedbackProps {
     variant?: 'info' | 'danger' | 'warning' | 'success';

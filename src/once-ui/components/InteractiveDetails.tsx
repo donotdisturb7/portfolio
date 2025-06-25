@@ -1,7 +1,9 @@
 'use client';
 
 import React, { forwardRef } from 'react';
-import { Text, Flex, IconButton, IconButtonProps } from '.';
+import { Text } from './Text';
+import { Flex } from './Flex';
+import { IconButton, IconButtonProps } from './IconButton';
 
 interface InteractiveDetailsProps {
     label?: string;

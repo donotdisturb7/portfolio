@@ -3,7 +3,8 @@
 import React, { ReactNode, forwardRef } from 'react';
 import Link from 'next/link';
 
-import { Spinner, Icon } from '.';
+import { Spinner } from './Spinner';
+import { Icon } from './Icon';
 import styles from './Button.module.scss';
 
 interface CommonProps {

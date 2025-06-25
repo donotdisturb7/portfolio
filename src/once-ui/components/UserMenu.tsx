@@ -3,8 +3,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Flex, DropdownWrapper, DropdownProps, User, UserProps } from '.';
-import { DropdownOptions } from '.';
+import { Flex } from './Flex';
+import { DropdownWrapper, DropdownProps, DropdownOptions } from './DropdownWrapper';
+import { User, UserProps } from './User';
 import styles from './UserMenu.module.scss'
 
 interface UserMenuProps extends UserProps {

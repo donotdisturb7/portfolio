@@ -4,7 +4,8 @@ import React, { CSSProperties, useState, useRef, useEffect } from 'react';
 import Image, { ImageProps } from 'next/image';
 import classNames from 'classnames';
 
-import { Flex, Skeleton } from '@/once-ui/components';
+import { Flex } from './Flex';
+import { Skeleton } from './Skeleton';
 
 export type SmartImageProps = ImageProps & {
     className?: string;

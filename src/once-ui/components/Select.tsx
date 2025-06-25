@@ -2,8 +2,9 @@
 
 import React, { useState, useRef, useEffect, forwardRef } from 'react';
 import classNames from 'classnames';
-import { DropdownWrapper, Input, InputProps } from '.';
-import { DropdownOptions } from '.';
+import { DropdownWrapper } from './DropdownWrapper';
+import { Input, InputProps } from './Input';
+import { DropdownOptions } from './Dropdown';
 import inputStyles from './Input.module.scss';
 
 interface SelectProps extends Omit<InputProps, 'onSelect' | 'value'> {
