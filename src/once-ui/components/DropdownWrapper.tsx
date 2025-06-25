@@ -7,6 +7,8 @@ import { Dropdown, DropdownProps, DropdownOptions } from './Dropdown';
 import styles from './Select.module.scss';
 import classNames from 'classnames';
 
+export type { DropdownProps, DropdownOptions };
+
 interface DropdownWrapperProps {
     children: ReactNode;
     dropdownOptions: DropdownOptions[];

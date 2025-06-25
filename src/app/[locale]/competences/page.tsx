@@ -75,13 +75,17 @@ export default function Competences(
 					}),
 				}}
 			/>
-			<Flex as="ul" noStyle gap="24" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+			<Flex as="ul" gap="24" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none p-0 m-0">
 				{allCompetences.map((project) => (
 					<ProjectCard
 						key={project.slug}
-						{...project}
-						locale={locale}
+						slug={project.slug}
 						basePath="competences"
+						images={[project.metadata.image || '']}
+						title={project.metadata.title}
+						description={project.metadata.summary || ''}
+						content={project.content}
+						avatars={[]}
 					/>
 				))}
 			</Flex>

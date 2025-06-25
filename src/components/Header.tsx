@@ -15,7 +15,7 @@ export const Header = () => {
         { href: "/about", label: "À propos", icon: "person", check: (p: string) => p === "/about" },
         { href: "/work", label: "Projets", icon: "grid", check: (p: string) => p.startsWith('/work') },
         { href: "/blog", label: "Blog", icon: "book", check: (p: string) => p.startsWith('/blog') },
-        { href: "/competences", label: "Compétences", icon: "shapes", check: (p: string) => p.startsWith('/competences') }
+        { href: "/competences", label: "Compétences", icon: "gallery", check: (p: string) => p.startsWith('/competences') }
     ];
 
     return (
